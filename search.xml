@@ -4,11 +4,99 @@
   
     
     <entry>
+      <title>Hexo博客搭建基础教程-二</title>
+      <link href="/2023/07/24/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-%E4%BA%8C/"/>
+      <url>/2023/07/24/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-%E4%BA%8C/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杂谈其一</title>
+      <link href="/2023/07/23/%E6%9D%82%E8%B0%88%E5%85%B6%E4%B8%80/"/>
+      <url>/2023/07/23/%E6%9D%82%E8%B0%88%E5%85%B6%E4%B8%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-测试"><a href="#1-测试" class="headerlink" title="1.测试"></a>1.测试</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> -杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>诗歌分享其一</title>
+      <link href="/2023/07/23/%E8%AF%97%E6%AD%8C%E5%88%86%E4%BA%AB/"/>
+      <url>/2023/07/23/%E8%AF%97%E6%AD%8C%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-测试"><a href="#1-测试" class="headerlink" title="1.测试"></a>1.测试</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> -诗歌杂类 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -诗歌 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo博客搭建基础教程(一)</title>
+      <link href="/2023/07/23/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-%E4%B8%80/"/>
+      <url>/2023/07/23/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-%E4%B8%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-前言📝"><a href="#1-前言📝" class="headerlink" title="1.前言📝"></a>1.<strong>前言📝</strong></h1><p><strong>1.免费几乎零成本带你搭建一个博客，加入网络部更可以得到学长亲自答疑解惑。</strong></p><p><strong>2.博客搭建过程遇到任何问题，优先在本页面搜索，检查是否已经有该配置教程。</strong></p><h1 id="2-环境与工具准备"><a href="#2-环境与工具准备" class="headerlink" title="2.环境与工具准备"></a><strong>2.环境与工具准备</strong></h1><p>本教程主要面对的是Windows用户</p><ul><li>操作系统：Windows10</li><li>Node</li><li>Git</li><li>Hexo</li><li>文本编辑器(强烈推荐VSCODE)</li><li>GitHub 帐号</li><li>一个域名（强烈推荐买个域名）</li><li>云服务器（可选）</li></ul><h2 id="3-Node的安装"><a href="#3-Node的安装" class="headerlink" title="3.Node的安装"></a><strong>3.Node的安装</strong></h2><p>1.打开<code>Node</code>官网，下载和自己系统相配的<code>Node</code>的安装程序，否则会出现安装问题。<br>下载地址：<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p><p><img src="https://bu.dusays.com/2022/05/10/6279474912af2.png" alt></p><p>查看历史版本，找到 v12.18.0 进行下载。</p><p>2.下载后傻瓜式安装即可，安装的目录可以使用默认目录【C:/Program Files/nodejs/】，也可以自定义路径。</p><p>3.安装完成后，检查是否安装成功。在键盘按下<code>win</code> + <code>R</code>键，输入<code>CMD</code>，然后回车，打开<code>CMD</code>窗口，执行<code>node -v</code>命令，看到版本信息，则说明安装成功。</p><p><img src="https://bu.dusays.com/2022/05/10/6279501e8eb8f.png" alt></p><p><img src="https://bu.dusays.com/2022/05/10/627950224668f.png" alt></p><p>4.修改<code>npm</code>源。<code>npm</code>下载各种模块，默认是从国处服务器下载，速度较慢，建议配置成淘宝镜像。打开CMD窗口，运行如下命令:</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><h1 id="4-安装-Hexo"><a href="#4-安装-Hexo" class="headerlink" title="4.安装 Hexo"></a><strong>4.安装 Hexo</strong></h1><p>在目标路径打开CMD窗口，输入<code>npm install -g hexo-cli</code>安装<code>Hexo</code>环境。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>安装完后输入<strong>hexo -v</strong>验证是否安装成功。</p><p><img src="https://bu.dusays.com/2022/05/12/627bed30030f8.png" alt></p><h1 id="5-注册-GitHub-帐号"><a href="#5-注册-GitHub-帐号" class="headerlink" title="5.注册 GitHub 帐号"></a>5.注册 GitHub 帐号</h1><p>​        1.进入官网 <a href="https://github.com/">https://github.com/</a></p><p>​        2.点击右上角的 Sign up(注册)，不是Sign in（登录）。</p><p><img src="https://bu.dusays.com/2022/05/12/627d2c0449341.webp" alt></p><p>3.填写自己的邮箱、密码、用户名等信息，然后用邮箱验证即可完成</p><p><img src="https://bu.dusays.com/2022/05/12/627d2c05ee628.png" alt></p><h1 id="6-创建-GitHub-仓库"><a href="#6-创建-GitHub-仓库" class="headerlink" title="6.创建 GitHub 仓库"></a>6.创建 GitHub 仓库</h1><p>点击右上角的<strong>+</strong>按钮，选择<strong>New repository</strong>，创建一个<strong>&lt;用户名&gt;.github.io</strong>的仓库</p><p><img src="https://bu.dusays.com/2022/05/08/62776cef6aeb4.webp" alt></p><p>找不到创建入口的，访问：<a href="https://github.com/new">https://github.com/new</a></p><ul><li>仓库的格式必须为：<code>&lt;用户名&gt;.github.io</code></li><li>Description：为描述仓库（选填）</li><li>勾选 <strong>Initialize this repository with a README</strong> 初始化一个 README.md 文件</li><li>点击 <strong>Creat repository</strong> 进行创建</li></ul><p><img src="https://bu.dusays.com/2022/05/13/627d4109113e8.png" alt></p><h1 id="7-Git安装-amp-amp-连接Github"><a href="#7-Git安装-amp-amp-连接Github" class="headerlink" title="7.Git安装 &amp;&amp; 连接Github"></a>7.Git安装 &amp;&amp; 连接Github</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h2><p>​        1.进入官网：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> ，由于官网下载太慢可以通过淘宝的开源镜像下载 网址：<a href="https://registry.npmmirror.com/binary.html?path=git-for-windows/v2.36.1.windows.1/">https://registry.npmmirror.com/binary.html?path=git-for-windows/v2.36.1.windows.1/</a> ，下载版本更具自己的需求选择即可。</p><p><img src="https://bu.dusays.com/2022/05/13/627d410b6156f.png" alt></p><p>2.下载后傻瓜式安装Git即可，安装的目录可以使用默认目录【C:/Program Files/Git】，也可以自定义路径。</p><p>3.点击电脑左下角开始即可看见Git Bash。</p><p><img src="https://bu.dusays.com/2022/05/13/627d410ddc940.webp" alt></p><ul><li><p>Git CMD 是windows 命令行的指令风格</p></li><li><p>Git Bash 是linux系统的指令风格（建议使用）</p></li><li>Git GUI是图形化界面（新手学习不建议使用）</li></ul><p>4.打开<code>Git Bash</code>后如下图所示即代表安装完成。</p><p><img src="https://bu.dusays.com/2022/05/14/627e8ea336578.png" alt></p><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>​        1.常用命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git config -l  //查看所有配置</span><br><span class="line"></span><br><span class="line">git config --system --list //查看系统配置</span><br><span class="line"></span><br><span class="line">git config --global --list //查看用户（全局）配置</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>​        2.配置用户名和邮箱</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&quot;你的用户名&quot;</span></span><br><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&quot;你的邮箱&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>输入后没有报错即代表设置成功。</p><p><img src="https://bu.dusays.com/2022/05/13/627e7a4e5cedd.png" alt></p><p>通过<code>git config -l</code> 检查是否配置成功，至此git安装及配置全部完成。</p><p><img src="https://bu.dusays.com/2022/05/13/627e7a861d92d.png" alt></p><h2 id="连接Github"><a href="#连接Github" class="headerlink" title="连接Github"></a>连接Github</h2><p>1.生成ssh公钥，执行以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure><p>之后打开C盘下用户文件夹下的.ssh的文件夹，会看到 id_rsa.pub</p><p><img src="https://bu.dusays.com/2022/05/14/627e87126fc59.png" alt=" "></p><p><img src="https://bu.dusays.com/2022/05/14/627e87156038a.png" alt></p><p>2.将 SSH KEY 配置到 GitHub<br>进入github，点击右上角头像 选择<code>settings</code></p><p><img src="https://bu.dusays.com/2022/05/14/627e877fb746b.png" alt></p><p>进入设置页后选择 <code>SSH and GPG keys</code></p><p><img src="https://bu.dusays.com/2022/05/14/627e8802e6729.png" alt></p><p><img src="https://bu.dusays.com/2022/05/14/627e881524f28.png" alt></p><p><strong><em><u>注意: 要是有【Key type】的选择项 ，选择默认<code>Authentication Key</code> 即可。</u></em></strong></p><p>3.测试连接，输入以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>出现如下信息，说明已经大功告成！</p><p><img src="https://bu.dusays.com/2022/05/14/627e8993b5eb6.png" alt></p><p>以上就是所有步骤，恭喜你已经完成了环境准备工作~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -Hexo博客 -入门 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>佛冈中学学生会学生会简介暨网络部</title>
       <link href="/2023/07/21/%E4%BD%9B%E5%86%88%E4%B8%AD%E5%AD%A6%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%AD%A6%E7%94%9F%E4%BC%9A%E7%AE%80%E4%BB%8B%E6%9A%A8%E7%BD%91%E7%BB%9C%E9%83%A8/"/>
       <url>/2023/07/21/%E4%BD%9B%E5%86%88%E4%B8%AD%E5%AD%A6%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%AD%A6%E7%94%9F%E4%BC%9A%E7%AE%80%E4%BB%8B%E6%9A%A8%E7%BD%91%E7%BB%9C%E9%83%A8/</url>
       
-        <content type="html"><![CDATA[<h1 id="1-学生会各个部门简介"><a href="#1-学生会各个部门简介" class="headerlink" title="1.学生会各个部门简介"></a>1.学生会各个部门简介</h1><h2 id="1-1网络部："><a href="#1-1网络部：" class="headerlink" title="1.1网络部："></a>1.1网络部：</h2><p>​            负责学生会的学生会工作时拍摄拍照，学生会活动记录存档。</p><h2 id="1-2外联部："><a href="#1-2外联部：" class="headerlink" title="1.2外联部："></a>1.2外联部：</h2><p>​            主要负责代表学生会与其他社团和学校交流为社团争取活动经费等。</p><h2 id="1-3体育部："><a href="#1-3体育部：" class="headerlink" title="1.3体育部："></a>1.3体育部：</h2><p>​            负责组织同学参加学校体育活动。</p><h2 id="1-4宣传部："><a href="#1-4宣传部：" class="headerlink" title="1.4宣传部："></a>1.4宣传部：</h2><p>​            主要负责弄宣传海报等方式宣传学生会的活动</p><h2 id="1-5秘书部"><a href="#1-5秘书部" class="headerlink" title="1.5秘书部"></a>1.5秘书部</h2><p>​            协助学生会主席工作。</p><h1 id="2-网络部详情"><a href="#2-网络部详情" class="headerlink" title="2.网络部详情"></a>2.网络部详情</h1><p>​    <img src="/2023/07/21/%E4%BD%9B%E5%86%88%E4%B8%AD%E5%AD%A6%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%AD%A6%E7%94%9F%E4%BC%9A%E7%AE%80%E4%BB%8B%E6%9A%A8%E7%BD%91%E7%BB%9C%E9%83%A8/微信图片_20230721133639.jpg" alt="微信图片_20230721133639"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="佛冈中学学生会各部门简介和网络部宣传"><a href="#佛冈中学学生会各部门简介和网络部宣传" class="headerlink" title="佛冈中学学生会各部门简介和网络部宣传"></a><strong>佛冈中学学生会各部门简介和网络部宣传</strong></h1><span id="more"></span><h1 id="1-学生会各个部门简介"><a href="#1-学生会各个部门简介" class="headerlink" title="1.学生会各个部门简介"></a>1.学生会各个部门简介</h1><h2 id="1-1网络部："><a href="#1-1网络部：" class="headerlink" title="1.1网络部："></a>1.1网络部：</h2><p>​            负责学生会的学生会工作时拍摄拍照，学生会活动记录存档。</p><h2 id="1-2外联部："><a href="#1-2外联部：" class="headerlink" title="1.2外联部："></a>1.2外联部：</h2><p>​            主要负责代表学生会与其他社团和学校交流为社团争取活动经费等。</p><h2 id="1-3体育部："><a href="#1-3体育部：" class="headerlink" title="1.3体育部："></a>1.3体育部：</h2><p>​            负责组织同学参加学校体育活动。</p><h2 id="1-4宣传部："><a href="#1-4宣传部：" class="headerlink" title="1.4宣传部："></a>1.4宣传部：</h2><p>​            主要负责弄宣传海报等方式宣传学生会的活动</p><h2 id="1-5秘书部"><a href="#1-5秘书部" class="headerlink" title="1.5秘书部"></a>1.5秘书部</h2><p>​            协助学生会主席工作。</p><h1 id="2-网络部详情"><a href="#2-网络部详情" class="headerlink" title="2.网络部详情"></a>2.网络部详情</h1><p>​    <img src="/2023/07/21/%E4%BD%9B%E5%86%88%E4%B8%AD%E5%AD%A6%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%AD%A6%E7%94%9F%E4%BC%9A%E7%AE%80%E4%BB%8B%E6%9A%A8%E7%BD%91%E7%BB%9C%E9%83%A8/微信图片_20230721133639.jpg" alt="微信图片_20230721133639"></p>]]></content>
       
       
       <categories>
@@ -17,6 +105,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 佛冈中学学生会 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -36,6 +130,31 @@
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Css中有哪些可继承的属性？</title>
+      <link href="/2023/04/30/Css%E4%B8%AD%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E7%BB%A7%E6%89%BF%E7%9A%84%E5%B1%9E%E6%80%A7%EF%BC%9F/"/>
+      <url>/2023/04/30/Css%E4%B8%AD%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E7%BB%A7%E6%89%BF%E7%9A%84%E5%B1%9E%E6%80%A7%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[<div class="img-wrap"><div class="img-bg"><img class="img" src="https://bu.dusays.com/2023/03/29/64242dd0dce6c.jpg"></div></div><h2 id="有继承性的属性"><a href="#有继承性的属性" class="headerlink" title="有继承性的属性"></a>有继承性的属性</h2><h3 id="字体系列属性"><a href="#字体系列属性" class="headerlink" title="字体系列属性"></a>字体系列属性</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`<span class="attribute">font</span>`、`<span class="attribute">font-family</span>`、`<span class="attribute">font-weight</span>`、`<span class="attribute">font-size</span>`、`<span class="attribute">font-style</span>`、`<span class="attribute">font-variant</span>`、`<span class="attribute">font-stretch</span>`、`<span class="attribute">font-size-adjust</span>`。</span><br></pre></td></tr></table></figure><h3 id="文本系列属性"><a href="#文本系列属性" class="headerlink" title="文本系列属性"></a>文本系列属性</h3><p><code>text-indent</code>、<code>text-align</code>、<code>line-height</code>、<code>word-spacing</code>、<code>letter-spacing</code>、<code>text-transform</code>、<code>direction</code>、<code>color</code>。</p><h3 id="元素可见性"><a href="#元素可见性" class="headerlink" title="元素可见性"></a>元素可见性</h3><p><code>visibility</code>。</p><h3 id="表格布局属性"><a href="#表格布局属性" class="headerlink" title="表格布局属性"></a>表格布局属性</h3><p><code>caption-side</code>、<code>border-collapse</code>、<code>border-spacing</code>、<code>empty-cells</code>、<code>table-layout</code>。</p><h3 id="列表布局属性"><a href="#列表布局属性" class="headerlink" title="列表布局属性"></a>列表布局属性</h3><p><code>list-style-type</code>、<code>list-style-image</code>、<code>list-style-position</code>、<code>list-style</code>。</p><h3 id="生成内容属性"><a href="#生成内容属性" class="headerlink" title="生成内容属性"></a>生成内容属性</h3><p><code>quotes</code>。</p><h3 id="光标属性"><a href="#光标属性" class="headerlink" title="光标属性"></a>光标属性</h3><p><code>cursor</code>。</p><h3 id="页面样式属性"><a href="#页面样式属性" class="headerlink" title="页面样式属性"></a>页面样式属性</h3><p><code>page</code>、<code>page-break-inside</code>、<code>windows</code>、<code>orphans</code>。</p><h3 id="声音样式属性"><a href="#声音样式属性" class="headerlink" title="声音样式属性"></a>声音样式属性</h3><p><code>speak</code>、<code>speak-punctuation</code>、<code>speak-numeral</code>、<code>speak-header</code>、<code>speech-rate</code>、<code>volume</code>、<code>voice-family</code>、<code>pitch</code>、<code>pitch-range</code>、<code>stress</code>、<code>richness</code>、<code>azimuth</code>、<code>elevation</code>。</p><h2 id="所有元素均可继承的属性"><a href="#所有元素均可继承的属性" class="headerlink" title="所有元素均可继承的属性"></a>所有元素均可继承的属性</h2><p>元素可见性<code>visibility</code>、光标属性<code>cursor</code>。</p><h2 id="内联元素可继承的属性"><a href="#内联元素可继承的属性" class="headerlink" title="内联元素可继承的属性"></a>内联元素可继承的属性</h2><p>字体系列属性: <code>font</code>、<code>font-size</code>、<code>font-family</code>、<code>font-style</code>、<code>font-variant</code>、<code>font-weight</code>。<br>文本系列属性: <code>text-decoration</code>、<code>text-align</code>、<code>letter-spacing</code>、<code>word-spacing</code>、<code>white-space</code>、<code>line-height</code>、<code>color</code>。</p><h2 id="块级元素可继承的属性"><a href="#块级元素可继承的属性" class="headerlink" title="块级元素可继承的属性"></a>块级元素可继承的属性</h2><p><code>text-indent</code>、<code>text-align</code>。</p><h2 id="列表元素可继承的属性"><a href="#列表元素可继承的属性" class="headerlink" title="列表元素可继承的属性"></a>列表元素可继承的属性</h2><p><code>list-style</code>、<code>list-style-type</code>、<code>list-style-position</code>、<code>list-style-image</code>。</p><h2 id="无继承性的属性"><a href="#无继承性的属性" class="headerlink" title="无继承性的属性"></a>无继承性的属性</h2><h3 id="生成内容属性-1"><a href="#生成内容属性-1" class="headerlink" title="生成内容属性"></a>生成内容属性</h3><p><code>display</code>。</p><h3 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h3><p><code>vertical-align</code>、<code>text-decoration</code>、<code>text-shadow</code>、<code>white-space</code>、<code>unicode-bidi</code>。</p><h3 id="盒子模型的属性"><a href="#盒子模型的属性" class="headerlink" title="盒子模型的属性"></a>盒子模型的属性</h3><p><code>width</code>、<code>height</code>、<code>margin</code>、<code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code>、<code>margin-left</code>、<code>border</code>、<code>border-style</code>、<code>border-top-style</code>、<code>border-right-style</code>、<code>border-bottom-style</code>、<code>border-left-style</code>、<code>border-width</code>、<code>border-top-width</code>、<code>border-right-right</code>、<code>border-bottom-width</code>、<code>border-left-width</code>、<code>border-color</code>、<code>border-top-color</code>、<code>border-right-color</code>、<code>border-bottom-color</code>、<code>border-left-color</code>、<code>border-top</code>、<code>border-right</code>、<code>border-bottom</code>、<code>border-left</code>、<code>padding</code>、<code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code>、<code>padding-left</code>。</p><h3 id="背景属性"><a href="#背景属性" class="headerlink" title="背景属性"></a>背景属性</h3><p><code>background</code>、<code>background-color</code>、<code>background-image</code>、<code>background-repeat</code>、<code>background-position</code>、<code>background-attachment</code>。</p><h3 id="定位属性"><a href="#定位属性" class="headerlink" title="定位属性"></a>定位属性</h3><p><code>float</code>、<code>clear</code>、<code>position</code>、<code>top</code>、<code>right</code>、<code>bottom</code>、<code>left</code>、<code>min-width</code>、<code>min-height</code>、<code>max-width</code>、<code>max-height</code>、<code>overflow、clip</code>、<code>z-index</code>。</p><h3 id="生成内容属性-2"><a href="#生成内容属性-2" class="headerlink" title="生成内容属性"></a>生成内容属性</h3><p><code>content</code>、<code>counter-reset</code>、<code>counter-increment</code>。</p><h3 id="轮廓样式属性"><a href="#轮廓样式属性" class="headerlink" title="轮廓样式属性"></a>轮廓样式属性</h3><p><code>outline-style</code>、<code>outline-width</code>、<code>outline-color</code>、<code>outline</code>。</p><h3 id="页面样式属性-1"><a href="#页面样式属性-1" class="headerlink" title="页面样式属性"></a>页面样式属性</h3><p><code>size</code>、<code>page-break-before</code>、<code>page-break-after</code>。</p><h3 id="声音样式属性-1"><a href="#声音样式属性-1" class="headerlink" title="声音样式属性"></a>声音样式属性</h3><p><code>pause-before</code>、<code>pause-after</code>、<code>pause</code>、<code>cue-before</code>、<code>cue-after</code>、<code>cue</code>、<code>play-during</code>。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
       
     </entry>
     
