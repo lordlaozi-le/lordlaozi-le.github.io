@@ -216,8 +216,8 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: '',
-      region: '',
+      envId: 'https://twikoo-api-six-mu.vercel.app',
+      region: 'ap-guangdong',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
       }
@@ -228,8 +228,8 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: '',
-      region: '',
+      envId: 'https://twikoo-api-six-mu.vercel.app',
+      region: 'ap-guangdong',
       urls: [window.location.pathname],
       includeReply: false
     }).then(function (res) {
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
 
   const runFn = () => {
     init()
-    
+    GLOBAL_CONFIG_SITE.isPost && getCount()
   }
 
   const loadTwikoo = () => {
@@ -252,8 +252,8 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
     getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
   }
 
-  if ('Twikoo' === 'Twikoo' || !false) {
-    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
     else loadTwikoo()
   } else {
     window.loadOtherComment = () => {
